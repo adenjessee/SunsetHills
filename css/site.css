@@ -2,8 +2,7 @@
 body {
     background-image: url("../beach.jpg");
     background-color: #cccccc;
-    /* background-attachment: fixed;
-    background-color: red; */
+    background-attachment: fixed;
     /* background-image: linear-gradient( #ff7b00,#007bff); */
 }
 
