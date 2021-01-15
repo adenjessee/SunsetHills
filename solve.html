@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/site.css">
+
+    <!-- Top Navigation -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="m-auto navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="solve.html">Solve</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="code.html">Code</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+    </div>
+
+</head>
+<body>
+    <header>
+        <div class="p-3 jumbotron-fluid text-center">
+            <h1 class="display-4">Sunset Hills</h1>
+            <p class="lead">Welcome to the Solve Page</p>
+            <p>Thank you for visiting this site!</p>
+            <p class="lead">
+                <a target="_blank" class="m-3 btn btn-primary btn-lg" href="https://adenjessee.netlify.app/" role="button">My Portfolio</a>
+                <a target="_blank" class="m-3 btn btn-primary btn-lg" href="https://github.com/adenjessee?tab=repositories" role="button">My Github</a>
+            </p>
+        </div>
+    </header>
+
+    <!-- The Main App UI -->
+    <main class="containter m-3">
+        <div class="text-center card shadow">
+
+            <h5 class="m-4">Change the values and see which buildings will see the sunset from the left</h5>
+
+            <hr>
+
+            <!-- SLIDER 1 -->
+            <div class="row">
+                <div class="col-sm-6 m-2 text-center">
+                    <h5>Set The Number of Buildings</h5>
+                </div>
+                <div class="col-sm-5 m-2 text-center">
+                    <div class="slidecontainer">
+                        <input style="width: 180px;" type="range" min="1" max="50" value="20" class="slider" id="quantSlider">
+                        <h5 id="sliderText1"></h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDER 2 -->
+            <div class="row">
+                <div class="col-sm-6 m-2 text-center">
+                    <hr>
+                    <h5>Set The Maximum Height</h5>
+                </div>
+                <div class="col-sm-5 m-2 text-center">
+                    <div class="slidecontainer">
+                        <hr>
+                        <input style="width: 180px;" type="range" min="1" max="100" value="50" class="slider" id="rangeSlider">
+                        <h5 id="sliderText2"></h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BUTTON -->
+            <div class="row">
+                <div class="col m-3 text-center">
+                    <hr>
+                    <button id="submitButton" class="btn btn-primary ">Generate New Heights</button>
+                </div>
+            </div>
+
+            <div id="card-body" class="card-body shadow">
+                <div class="text-center card shadow">
+                    <div id="card-body" class="card-body shadow">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- three.js code -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="js/site.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+</body>
+</html>
