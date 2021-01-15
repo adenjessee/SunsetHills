@@ -7,7 +7,7 @@ body {
 }
 
 header{
-    background-color:#ffffff44;
+    background-color:#ffffff75;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: fixed;
@@ -22,6 +22,10 @@ header{
     margin: 15px auto;
     max-width: 800px;
     width: 100%;
+}
+
+.tropical{
+    max-width: 70%;
 }
 
 
