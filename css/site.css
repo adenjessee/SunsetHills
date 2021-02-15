@@ -1,8 +1,7 @@
 
 body {
-    background-image: url("../beach.jpg");
-    background-color: #cccccc;
-    background-attachment: fixed;
+    background-image: url("../buildings.jpg");
+    background-size: cover;
     /* background-image: linear-gradient( #ff7b00,#007bff); */
 }
 
